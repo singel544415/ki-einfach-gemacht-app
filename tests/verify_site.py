@@ -104,6 +104,7 @@ def main() -> None:
         "assets/review-candidate.png",
         "assets/review-settings.png",
         "tatsächliche anwendung",
+        "unmittelbar vor dem self_only-testupload",
     ]:
         require(phrase in index, f"index.html: Pflichtinhalt fehlt: {phrase}")
 
