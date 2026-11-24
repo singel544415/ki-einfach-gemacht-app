@@ -2,21 +2,118 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>KI Einfach Gemacht</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="KI Einfach Gemacht ist eine lokal installierbare Desktop-Anwendung für Creator, die KI-Kurzvideos prüfen und kontrolliert auf TikTok veröffentlichen.">
+  <title>KI Einfach Gemacht – lokale Creator-Desktop-Anwendung</title>
+  <link rel="icon" href="app-icon.png" type="image/png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <div class="mark">KI</div>
-    <h1>KI Einfach Gemacht</h1>
-    <p class="lead">Lokale Anwendung zur Erstellung und kontrollierten Veröffentlichung deutschsprachiger KI-Kurzvideos.</p>
-    <section>
-      <h2>Funktionsweise</h2>
-      <p>Die Anwendung erstellt Videos lokal, prüft Bild und Ton und verwendet die offizielle TikTok Content Posting API nur nach ausdrücklicher Freigabe des angemeldeten Nutzers.</p>
-      <p>Vor jeder Veröffentlichung werden Video, Beschreibung und Sichtbarkeit angezeigt. Ohne Freigabe wird nichts hochgeladen oder veröffentlicht.</p>
+  <a class="skip-link" href="#inhalt">Zum Hauptinhalt</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="KI Einfach Gemacht – Startseite">
+      <span class="mark" aria-hidden="true">KI</span>
+      <span>KI Einfach Gemacht</span>
+    </a>
+    <nav class="top-nav" aria-label="Hauptnavigation">
+      <a href="#funktionen">Funktionen</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </header>
+
+  <main id="inhalt">
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">Lokale Creator-Software · begrenzte Pilotphase</p>
+      <h1 id="hero-title">KI-Kurzvideos erstellen, prüfen und bewusst freigeben.</h1>
+      <p class="lead">„KI Einfach Gemacht“ ist eine lokal installierbare Desktop-Anwendung für deutschsprachige Creator. Sie bündelt die Vorbereitung KI-gestützter Kurzvideos und einen kontrollierten TikTok-Veröffentlichungsablauf an einem Creator-Arbeitsplatz.</p>
+      <div class="actions" aria-label="Weiterführende Informationen">
+        <a class="button primary" href="#ablauf">So funktioniert es</a>
+        <a class="button secondary" href="support.html">Support &amp; Datenlöschung</a>
+      </div>
+      <p class="status-note"><strong>Aktueller Status:</strong> Die Anwendung befindet sich in einer begrenzten Pilotphase. Sie ist kein allgemein verfügbarer Cloud-Dienst und bietet keine Mehrnutzerfähigkeit oder öffentliche Registrierung.</p>
     </section>
-    <nav><a href="privacy.html">Datenschutzerklärung</a><a href="terms.html">Nutzungsbedingungen</a><a href="https://github.com/singel544415/ki-einfach-gemacht-app">Projektkontakt</a></nav>
+
+    <section id="zielgruppe" aria-labelledby="zielgruppe-title">
+      <div class="section-heading">
+        <p class="eyebrow">Für wen?</p>
+        <h2 id="zielgruppe-title">Für Creator mit einem klaren Freigabeschritt</h2>
+      </div>
+      <p>Die Desktop-Anwendung richtet sich an einzelne Creator, die Entwürfe lokal vorbereiten, Ausgabe und Metadaten kontrollieren und erst danach selbst über eine TikTok-Übertragung entscheiden möchten. Sie ersetzt weder redaktionelle Prüfung noch die Verantwortung für Rechte, Kennzeichnung und Plattformregeln.</p>
+    </section>
+
+    <section id="funktionen" aria-labelledby="funktionen-title">
+      <div class="section-heading">
+        <p class="eyebrow">Funktionen</p>
+        <h2 id="funktionen-title">Vom Entwurf bis zur kontrollierten Übergabe</h2>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Lokaler Arbeitsablauf</h3>
+          <p>Skripte, Medien und Videoentwürfe werden am lokalen Creator-Arbeitsplatz verarbeitet. Diese öffentliche Website nimmt keine Projekte, Videos oder TikTok-Zugangsdaten entgegen.</p>
+        </article>
+        <article class="card">
+          <h3>Prüfung vor dem Upload</h3>
+          <p>Video, Beschreibung, Sichtbarkeit und verfügbare Veröffentlichungsoptionen werden vor der Übertragung angezeigt. Ohne ausdrückliche Freigabe startet kein Upload.</p>
+        </article>
+        <article class="card">
+          <h3>Offizielle TikTok-Verbindung</h3>
+          <p>Die Verbindung erfolgt durch Anmeldung und Autorisierung bei TikTok. Die Anwendung nutzt nur die vom verbundenen Konto erteilten Berechtigungen für den bestätigten Posting-Ablauf.</p>
+        </article>
+        <article class="card">
+          <h3>AIGC-Transparenz</h3>
+          <p>KI-generierte oder wesentlich KI-bearbeitete Inhalte müssen vor der Veröffentlichung als solche geprüft und – soweit erforderlich – mit den vorgesehenen AIGC-Hinweisen gekennzeichnet werden.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="ablauf" aria-labelledby="ablauf-title">
+      <div class="section-heading">
+        <p class="eyebrow">So funktioniert es</p>
+        <h2 id="ablauf-title">Fünf nachvollziehbare Schritte</h2>
+      </div>
+      <ol class="steps">
+        <li><strong>Entwurf lokal vorbereiten.</strong> Der Creator erstellt oder importiert Skript, Medien und Metadaten auf dem Desktop-Gerät.</li>
+        <li><strong>TikTok-Konto verbinden.</strong> Die Anmeldung findet bei TikTok statt. Der Creator sieht und bestätigt die angeforderten Berechtigungen.</li>
+        <li><strong>Veröffentlichungsoptionen abrufen.</strong> Die Anwendung zeigt die für das verbundene Konto verfügbaren Optionen, statt Einstellungen zu unterstellen.</li>
+        <li><strong>Inhalt und Kennzeichnung prüfen.</strong> Video, Beschreibung, Sichtbarkeit, Rechte und notwendige Kennzeichnung KI-generierter Inhalte werden vorgelegt.</li>
+        <li><strong>Ausdrücklich freigeben.</strong> Erst die bewusste Bestätigung startet die Übertragung über die TikTok Content Posting API. TikTok verarbeitet den Upload anschließend nach seinen Plattformregeln.</li>
+      </ol>
+      <aside class="callout" aria-label="Wichtiger Hinweis zur Veröffentlichung">
+        <strong>Keine automatische Veröffentlichung:</strong> Eine Kontoverbindung allein löst weder Upload noch Posting aus. Abbruch oder fehlende Freigabe beendet den Ablauf ohne Veröffentlichung.
+      </aside>
+    </section>
+
+    <section id="kontrolle" aria-labelledby="kontrolle-title">
+      <div class="section-heading">
+        <p class="eyebrow">Kontrolle &amp; Daten</p>
+        <h2 id="kontrolle-title">Ein Arbeitsplatz, ein bewusst verbundenes Konto</h2>
+      </div>
+      <div class="split">
+        <div>
+          <h3>Kontotrennung</h3>
+          <p>Die Pilotanwendung ist für einen einzelnen lokalen Creator-Arbeitsplatz ausgelegt. Eine TikTok-Autorisierung gilt nur für das dabei ausdrücklich verbundene Konto; sie gewährt keinen automatischen Zugriff auf weitere TikTok-Konten. Für einen Kontowechsel wird die bestehende Verbindung getrennt und das andere Konto neu autorisiert.</p>
+        </div>
+        <div>
+          <h3>Widerruf und Löschung</h3>
+          <p>Die lokale Verbindung und gespeicherte Zugangstoken können in der Anwendung entfernt werden. Zusätzlich kann der Zugriff in den TikTok-Kontoeinstellungen widerrufen werden. Hinweise für Supportanfragen und Datenlöschung stehen auf der <a href="support.html">Support-Seite</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="legal-panel" aria-labelledby="rechtliches-title">
+      <h2 id="rechtliches-title">Transparenz vor der Nutzung</h2>
+      <p>Details zur lokalen Verarbeitung, TikTok-Anbindung, Aufbewahrung und zu den Verantwortlichkeiten stehen in der <a href="privacy.html">Datenschutzerklärung</a> und den <a href="terms.html">Nutzungsbedingungen</a>. Beide Dokumente sind vor einer Pilotnutzung einsehbar.</p>
+    </section>
   </main>
+
+  <footer>
+    <p><strong>KI Einfach Gemacht</strong><br><span class="muted">Lokale Desktop-/Creator-Anwendung in begrenzter Pilotphase</span></p>
+    <nav aria-label="Rechtliches und Support">
+      <a href="privacy.html">Datenschutz</a>
+      <a href="terms.html">Nutzungsbedingungen</a>
+      <a href="support.html">Support &amp; Datenlöschung</a>
+    </nav>
+  </footer>
 </body>
 </html>
