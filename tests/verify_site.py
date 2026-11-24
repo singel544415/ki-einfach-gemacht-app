@@ -101,6 +101,9 @@ def main() -> None:
         "nutzungsbedingungen",
         "support",
         "datenlöschung",
+        "assets/review-candidate.png",
+        "assets/review-settings.png",
+        "tatsächliche anwendung",
     ]:
         require(phrase in index, f"index.html: Pflichtinhalt fehlt: {phrase}")
 

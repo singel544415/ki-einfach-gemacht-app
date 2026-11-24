@@ -252,6 +252,32 @@ main > section:not(.hero) {
   gap: 2rem;
 }
 
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.screenshot-card {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--surface);
+}
+
+.screenshot-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid var(--line);
+}
+
+.screenshot-card figcaption {
+  padding: 1rem;
+  color: var(--muted);
+}
+
 .legal-panel { border-left-color: var(--cyan); background: rgba(37, 244, 238, .06); }
 .legal-panel h2 { font-size: 1.6rem; }
 .legal-panel p:last-child { margin-bottom: 0; }
@@ -281,7 +307,8 @@ footer p { margin: 0; }
   main { padding-top: 1.25rem; }
   .hero { padding: 1.5rem; border-radius: 1.2rem; }
   .card-grid,
-  .split { grid-template-columns: 1fr; }
+  .split,
+  .screenshot-grid { grid-template-columns: 1fr; }
   .split { gap: 1rem; }
 }
 
